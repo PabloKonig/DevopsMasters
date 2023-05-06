@@ -9,3 +9,8 @@ https://hub.docker.com/_/nginx/tags?page=1&name=1.22.1
 - Pegar el comando "docker pull nginx:1.22.1"
 - guardar
 - Probar utilizando ./1-nginx.sh (Si estás dentro de la carpeta que contiene el archivo, sino PATH/1-nginx.sh. Ex: /home/Documentos/1-nginx.sh)
+
+**Parte 2**
+- Crear script .sh 
+- Colocar los 2 comandos docker run, tal cual como da el ejemplo Roxs.
+- la flag --link db:db le indica al contenedor de php que su base de datos será el contenedor llamado db (En la creacion del contenedor mysql se le coloca el nombre db)
