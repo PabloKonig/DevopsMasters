@@ -4,9 +4,9 @@
 
     
   1. Linux Básico 
-        * [Challenge-01](./CLASE-02-LINUX_BASH/Reto1-OK.md) 
-        * [Challenge-02](./CLASE-02-LINUX_BASH/Reto2-OK.md)
-        * [Challenge-03](./CLASE-02-LINUX_BASH/Reto3-OK.md)
+        * [Challenge-01](./CLASE-02-LINUX-BASH/Reto1-OK.md) 
+        * [Challenge-02](./CLASE-02-LINUX-BASH/Reto2-OK.md)
+        * [Challenge-03](./CLASE-02-LINUX-BASH/Reto3-OK.md)
         * [Ejercicios-1]()
         * [Ejercicios-2]()  
         * [Ejercicios-3]()  
