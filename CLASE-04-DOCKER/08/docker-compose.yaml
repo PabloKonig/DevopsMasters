@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  redis:
+    container_name: db
+    image: redis:alpine3.17
+    ports:
+      - 6379:6379 
+
+  pythonapp:
+    container_name: pythonapp
+    depends_on: 
+      - redis
+    image: pythonapp:1.0
+    ports:
+      - 80:80 
