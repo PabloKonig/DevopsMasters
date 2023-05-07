@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  db:
+    container_name: db
+    restart: always
+    image: postgres:alpine3.17
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret123
+
+
+  pgadmin:
+    container_name: pgadmin
+    restart: always
+    depends_on: 
+      - db
+    image: dpage/pgadmin4:7.1
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: secret123
+    ports:
+      - 8080:80 
