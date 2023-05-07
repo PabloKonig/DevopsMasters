@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  backend_pokemon:
+    container_name: back
+    image: tetranucleotido/backend_pokemon:1.0.0
+    ports:
+      - 8000:8000 
+
+  frontend_pokemon:
+    container_name: front
+    depends_on: 
+      - backend_pokemon
+    image: tetranucleotido/frontend_pokemon:1.0.0
+    ports:
+      - 3000:3000 
